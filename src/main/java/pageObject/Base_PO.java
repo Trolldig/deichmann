@@ -1,0 +1,21 @@
+package pageObject;
+
+import org.openqa.selenium.PageLoadStrategy;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.PageFactory;
+
+public class Base_PO {
+    public Base_PO(){
+        PageFactory.initElements(getDriver(), this);
+    }
+
+    public WebDriver getDriver(){
+        return drivers.DriverFactory.getDriver();
+    }
+
+    public void navigateTo_URL(String url){
+        getDriver().get(url);
+    }
+}
