@@ -15,14 +15,14 @@ public class Start_Search_Steps extends Base_PO {
         this.start_search_po = start_search_po;
     }
 
-    @Given("I access the deichmann homepage")
-    public void i_access_the_deichmann_homepage() {
+    @Given("I access the homepage")
+    public void i_access_the_homepage() {
         start_search_po.navigateTo_Homepage();
     }
 
     @When("I click the search bar")
     public void i_click_the_search_bar() {
-
+        start_search_po.clickON_Search_Bar();
     }
 
     @And("I enter a search term")

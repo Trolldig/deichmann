@@ -2,7 +2,7 @@ Feature:  Deichmann - Start search
 
   @main
   Scenario: Validate Successful Search - Unique Data
-    Given I access the deichmann homepage
+    Given I access the homepage
     When I click the search bar
     And I enter a search term
     And I select a category
