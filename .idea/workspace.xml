@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a3bb8e6-0df0-466e-8abe-8beafd2f1364" name="Changes" comment="Setup - MainRunner is working - Start_Search_Steps are not implemented">
+    <list default="true" id="8a3bb8e6-0df0-466e-8abe-8beafd2f1364" name="Changes" comment="Add Accept CMP&#10;Add click on search bar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/Base_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/Base_PO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/Start_Search_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/Start_Search_PO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Start_Search_Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Start_Search_Steps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Start_Search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Start_Search.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +46,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.MainRunner">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Validate Successful Search - Unique Data">
     <configuration name="Scenario: Validate Successful Search - Unique Data" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Start_Search.feature" />
@@ -90,8 +86,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.MainRunner" />
         <item itemvalue="Cucumber Java.Scenario: Validate Successful Search - Unique Data" />
+        <item itemvalue="TestNG.MainRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -120,12 +116,21 @@
       <option name="project" value="LOCAL" />
       <updated>1744574549405</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add Accept CMP&#10;Add click on search bar">
+      <option name="closed" value="true" />
+      <created>1744578277393</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744578277393</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Setup - MainRunner is working - Start_Search_Steps are not implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup - MainRunner is working - Start_Search_Steps are not implemented" />
+    <MESSAGE value="Add Accept CMP&#10;Add click on search bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Accept CMP&#10;Add click on search bar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

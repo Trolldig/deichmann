@@ -1,6 +1,5 @@
 package drivers;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -24,13 +23,10 @@ public class DriverFactory {
     private static ThreadLocal<WebDriver> webDriver = new ThreadLocal<WebDriver>();
 
     private static WebDriver createDriver(){
-        //WebDriverManager driverManager;
         WebDriver driver = null;
 
         switch(getBrowserType()){
             case "chrome" -> {
-                //WebDriverManager.chromedriver().setup();
-                //System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/main/java/drivers/chromedriver.exe");
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
                 chromeOptions.addArguments("--remote-allow-origins=*");
@@ -41,6 +37,12 @@ public class DriverFactory {
                 EdgeOptions edgeOptions = new EdgeOptions();
                 edgeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
                 driver = new EdgeDriver(edgeOptions);
+                break;
+            }
+            case "firefox" -> {
+                FirefoxOptions options = new FirefoxOptions();
+                driver = new FirefoxDriver(options);
+                break;
             }
         }
         driver.manage().window().maximize();
