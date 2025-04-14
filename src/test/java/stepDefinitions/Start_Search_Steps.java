@@ -22,13 +22,12 @@ public class Start_Search_Steps extends Base_PO {
 
     @When("I click the search bar")
     public void i_click_the_search_bar() {
-        start_search_po.clickON_Search_Bar();
+        start_search_po.clickOn_Search_Bar();
     }
 
     @And("I enter a search term")
     public void i_enter_a_search_term() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        start_search_po.enterUnique_Text();
     }
     @And("I select a category")
     public void i_select_a_category() {

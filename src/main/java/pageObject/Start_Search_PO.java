@@ -7,14 +7,21 @@ import org.openqa.selenium.support.How;
 import utils.Global_vars;
 import org.openqa.selenium.SearchContext;
 
-import java.time.Duration;
-
 public class Start_Search_PO extends Base_PO{
 
     private @FindBy(how = How.CSS, using = "#cmpwrapper")
     WebElement shadowHost;
     private @FindBy(id = "search17")
-    WebElement search_TextField;
+    WebElement search_Bar_TextField;
+
+    private @FindBy(id = "deichmann-de-women_19")
+    WebElement search_Bar_Women_Button;
+
+    private @FindBy(id = "deichmann-de-men_19")
+    WebElement search_Bar_Men_Button;
+
+    private @FindBy(id = "deichmann-de-children_19")
+    WebElement search_Bar_Children_Button;
 
     public Start_Search_PO() { super();}
 
@@ -30,8 +37,12 @@ public class Start_Search_PO extends Base_PO{
         waitForWebElementAndClick(cmp_Button_Accept);
     }
 
-    public void clickON_Search_Bar() {
-        waitForWebElementAndClick(search_TextField);
+    public void clickOn_Search_Bar() {
+        waitForWebElementAndClick(search_Bar_TextField);
+    }
+
+    public void enterUnique_Text() {
+        sendKeys(search_Bar_TextField,"sneaker");
         sleepForFiveSeconds();
     }
 
