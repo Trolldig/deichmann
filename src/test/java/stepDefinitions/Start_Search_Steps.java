@@ -35,13 +35,11 @@ public class Start_Search_Steps extends Base_PO {
     }
     @And("I click on the first suggestion")
     public void i_click_on_the_first_suggestion() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        start_search_po.clickFirst_Suggestion();
     }
     @Then("I should be presented with the search result page")
     public void i_should_be_presented_with_the_search_result_page() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        sleepForFiveSeconds();
     }
 
 }
