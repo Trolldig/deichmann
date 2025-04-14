@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.testng.Assert;
 import utils.Global_vars;
 import org.openqa.selenium.SearchContext;
 
@@ -25,6 +26,8 @@ public class Start_Search_PO extends Base_PO{
 
     private @FindBy(className = "suggestion-link")
     WebElement search_Bar_suggestion;
+
+    private String unique_Part_Of_Search_URL = "search?";
 
     public Start_Search_PO() { super();}
 
@@ -54,6 +57,11 @@ public class Start_Search_PO extends Base_PO{
 
     public void clickFirst_Suggestion() {
         waitForWebElementAndClick(search_Bar_suggestion);
+    }
+
+    public void validate_Search_Page_Is_Displayed(){
+        waitForURL_Containing(unique_Part_Of_Search_URL);
+        Assert.assertTrue(getCurrentURL().contains(unique_Part_Of_Search_URL), "URL enthält nicht 'search?'");
     }
 
 }

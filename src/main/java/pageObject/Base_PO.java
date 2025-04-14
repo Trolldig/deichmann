@@ -61,6 +61,15 @@ public class Base_PO {
         Assert.assertEquals(alert_Message_Text, text);
     }
 
+    public void waitForURL_Containing(String text) {
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(Global_vars.DEFAULT_EXPLICIT_TIMEOUT));
+        wait.until(ExpectedConditions.urlContains(text));
+    }
+
+    public String getCurrentURL() {
+        return getDriver().getCurrentUrl();
+    }
+
     public void sleepForFiveSeconds() {
         try {
             Thread.sleep(5000); // 5 Sekunden

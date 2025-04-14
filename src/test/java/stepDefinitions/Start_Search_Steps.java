@@ -39,7 +39,7 @@ public class Start_Search_Steps extends Base_PO {
     }
     @Then("I should be presented with the search result page")
     public void i_should_be_presented_with_the_search_result_page() {
-        sleepForFiveSeconds();
+        start_search_po.validate_Search_Page_Is_Displayed();
     }
 
 }
