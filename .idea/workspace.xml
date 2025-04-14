@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a3bb8e6-0df0-466e-8abe-8beafd2f1364" name="Changes" comment="Add Accept CMP&#10;Add click on search bar">
+    <list default="true" id="8a3bb8e6-0df0-466e-8abe-8beafd2f1364" name="Changes" comment="Implement I should be presented with the search result page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/MainRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/MainRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +22,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="09e959e9-c0ec-4275-8bc0-e9776a160c23" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -46,7 +44,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Validate Successful Search - Unique Data">
+  <component name="RunManager" selected="TestNG.MainRunner">
     <configuration name="Scenario: Validate Successful Search - Unique Data" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Start_Search.feature" />
@@ -86,8 +84,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Validate Successful Search - Unique Data" />
         <item itemvalue="TestNG.MainRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Validate Successful Search - Unique Data" />
       </list>
     </recent_temporary>
   </component>
@@ -124,20 +122,74 @@
       <option name="project" value="LOCAL" />
       <updated>1744578277393</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Cleanup imports&#10;Add firefox to DriverFactory">
+      <option name="closed" value="true" />
+      <created>1744656600200</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744656600200</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Implement I enter a search term">
+      <option name="closed" value="true" />
+      <created>1744657425879</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1744657425879</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Implement I click a category">
+      <option name="closed" value="true" />
+      <created>1744657723898</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1744657723898</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fix Selector for search bar category buttons">
+      <option name="closed" value="true" />
+      <created>1744658531729</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1744658531729</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Implement I click on first suggestion">
+      <option name="closed" value="true" />
+      <created>1744658587723</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1744658587723</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Implement I should be presented with the search result page">
+      <option name="closed" value="true" />
+      <created>1744659798018</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1744659798018</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Setup - MainRunner is working - Start_Search_Steps are not implemented" />
     <MESSAGE value="Add Accept CMP&#10;Add click on search bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Accept CMP&#10;Add click on search bar" />
+    <MESSAGE value="Cleanup imports&#10;Add firefox to DriverFactory" />
+    <MESSAGE value="Implement I enter a search term" />
+    <MESSAGE value="Implement I click a category" />
+    <MESSAGE value="Fix Selector for search bar category buttons" />
+    <MESSAGE value="Implement I click on first suggestion" />
+    <MESSAGE value="Implement I should be presented with the search result page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement I should be presented with the search result page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/runners/MainRunner.java</url>
-          <line>7</line>
+          <line>8</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
