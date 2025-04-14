@@ -31,8 +31,7 @@ public class Start_Search_Steps extends Base_PO {
     }
     @And("I select a category")
     public void i_select_a_category() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        start_search_po.clickUnique_Category();
     }
     @And("I click on the first suggestion")
     public void i_click_on_the_first_suggestion() {

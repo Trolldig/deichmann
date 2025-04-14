@@ -43,7 +43,10 @@ public class Start_Search_PO extends Base_PO{
 
     public void enterUnique_Text() {
         sendKeys(search_Bar_TextField,"sneaker");
-        sleepForFiveSeconds();
+    }
+
+    public void clickUnique_Category() {
+        waitForWebElementAndClick(search_Bar_Men_Button);
     }
 
 }
