@@ -31,18 +31,15 @@ public class DriverFactory {
                 chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
                 chromeOptions.addArguments("--remote-allow-origins=*");
                 driver = new ChromeDriver(chromeOptions);
-                break;
             }
             case "edge" -> {
                 EdgeOptions edgeOptions = new EdgeOptions();
                 edgeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
                 driver = new EdgeDriver(edgeOptions);
-                break;
             }
             case "firefox" -> {
                 FirefoxOptions options = new FirefoxOptions();
                 driver = new FirefoxDriver(options);
-                break;
             }
         }
         driver.manage().window().maximize();

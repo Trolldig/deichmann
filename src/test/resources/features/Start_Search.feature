@@ -8,3 +8,11 @@ Feature:  Deichmann - Start search
     And I select a category
     And I click on the first suggestion
     Then I should be presented with the search result page
+
+  Scenario: Validate Successful Search - Specific Data
+    Given I access the homepage
+    When I click the search bar
+    And I enter a specific search term "Adilette"
+    And I select a specific category women
+    And I click on the first suggestion
+    Then I should be presented with the search result page

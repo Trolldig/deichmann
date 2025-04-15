@@ -32,9 +32,17 @@ public class Start_Search_Steps extends Base_PO {
     public void i_enter_a_search_term() {
         headerPO.enterUnique_Text();
     }
+    @And("I enter a specific search term {string}")
+    public void i_enter_a_specific_search_term(String searchTerm) {
+        headerPO.enterSpecific_Text(searchTerm);
+    }
     @And("I select a category")
     public void i_select_a_category() {
         headerPO.clickUnique_Category();
+    }
+    @And("I select a specific category {word}")
+    public void i_select_a_specific_category(String category) {
+        headerPO.clickSpecific_Category(category);
     }
     @And("I click on the first suggestion")
     public void i_click_on_the_first_suggestion() {
