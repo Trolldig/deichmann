@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a3bb8e6-0df0-466e-8abe-8beafd2f1364" name="Changes" comment="Implement I should be presented with the search result page">
+    <list default="true" id="8a3bb8e6-0df0-466e-8abe-8beafd2f1364" name="Changes" comment="Add HTML Report to MainRunner">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObject/Header_PO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/MainRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/MainRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/Start_Search_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/Search_PO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Start_Search_Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Start_Search_Steps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744659798018</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add HTML Report to MainRunner">
+      <option name="closed" value="true" />
+      <created>1744660181394</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1744660181394</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -182,7 +192,8 @@
     <MESSAGE value="Fix Selector for search bar category buttons" />
     <MESSAGE value="Implement I click on first suggestion" />
     <MESSAGE value="Implement I should be presented with the search result page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement I should be presented with the search result page" />
+    <MESSAGE value="Add HTML Report to MainRunner" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add HTML Report to MainRunner" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

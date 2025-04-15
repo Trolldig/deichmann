@@ -8,28 +8,14 @@ import org.testng.Assert;
 import utils.Global_vars;
 import org.openqa.selenium.SearchContext;
 
-public class Start_Search_PO extends Base_PO{
+public class Search_PO extends Base_PO{
 
     private @FindBy(how = How.CSS, using = "#cmpwrapper")
     WebElement shadowHost;
-    private @FindBy(id = "search17")
-    WebElement search_Bar_TextField;
-
-    private @FindBy(id = "label[for='deichmann-de-women_19']")
-    WebElement search_Bar_Women_Button;
-
-    private @FindBy(css = "label[for='deichmann-de-men_19']")
-    WebElement search_Bar_Men_Button;
-
-    private @FindBy(css = "label[for='deichmann-de-children_19']")
-    WebElement search_Bar_Children_Button;
-
-    private @FindBy(className = "suggestion-link")
-    WebElement search_Bar_suggestion;
 
     private String unique_Part_Of_Search_URL = "search?";
 
-    public Start_Search_PO() { super();}
+    public Search_PO() { super();}
 
     public void navigateTo_Homepage(){
         navigateTo_URL(Global_vars.DEICHMANN_HOMEPAGE_URL);
@@ -41,22 +27,6 @@ public class Start_Search_PO extends Base_PO{
         SearchContext shadowRoot = shadowHost.getShadowRoot();
         WebElement cmp_Button_Accept = shadowRoot.findElement(By.cssSelector("#cmpwelcomebtnyes"));
         waitForWebElementAndClick(cmp_Button_Accept);
-    }
-
-    public void clickOn_Search_Bar() {
-        waitForWebElementAndClick(search_Bar_TextField);
-    }
-
-    public void enterUnique_Text() {
-        sendKeys(search_Bar_TextField,"sneaker");
-    }
-
-    public void clickUnique_Category() {
-        waitForWebElementAndClick(search_Bar_Men_Button);
-    }
-
-    public void clickFirst_Suggestion() {
-        waitForWebElementAndClick(search_Bar_suggestion);
     }
 
     public void validate_Search_Page_Is_Displayed(){

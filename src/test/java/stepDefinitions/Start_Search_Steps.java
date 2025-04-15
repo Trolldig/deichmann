@@ -5,41 +5,44 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageObject.Base_PO;
-import pageObject.Start_Search_PO;
+import pageObject.Header_PO;
+import pageObject.Search_PO;
 
 public class Start_Search_Steps extends Base_PO {
 
-    private Start_Search_PO start_search_po;
+    private Header_PO headerPO;
+    private Search_PO searchPO;
 
-    public Start_Search_Steps(Start_Search_PO start_search_po) {
-        this.start_search_po = start_search_po;
+    public Start_Search_Steps(Header_PO header_po) {
+        this.headerPO = header_po;
+        this.searchPO = new Search_PO();
     }
 
     @Given("I access the homepage")
     public void i_access_the_homepage() {
-        start_search_po.navigateTo_Homepage();
+        searchPO.navigateTo_Homepage();
     }
 
     @When("I click the search bar")
     public void i_click_the_search_bar() {
-        start_search_po.clickOn_Search_Bar();
+        headerPO.clickOn_Search_Bar();
     }
 
     @And("I enter a search term")
     public void i_enter_a_search_term() {
-        start_search_po.enterUnique_Text();
+        headerPO.enterUnique_Text();
     }
     @And("I select a category")
     public void i_select_a_category() {
-        start_search_po.clickUnique_Category();
+        headerPO.clickUnique_Category();
     }
     @And("I click on the first suggestion")
     public void i_click_on_the_first_suggestion() {
-        start_search_po.clickFirst_Suggestion();
+        headerPO.clickFirst_Suggestion();
     }
     @Then("I should be presented with the search result page")
     public void i_should_be_presented_with_the_search_result_page() {
-        start_search_po.validate_Search_Page_Is_Displayed();
+        searchPO.validate_Search_Page_Is_Displayed();
     }
 
 }
