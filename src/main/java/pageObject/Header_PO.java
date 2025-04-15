@@ -1,5 +1,6 @@
 package pageObject;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -57,5 +58,9 @@ public class Header_PO extends Base_PO{
 
     public void clickFirst_Suggestion() {
         waitForWebElementAndClick(search_Bar_suggestion);
+    }
+
+    public void submitSearch() {
+        sendKeys(search_Bar_TextField, Keys.ENTER);
     }
 }

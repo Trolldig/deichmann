@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a3bb8e6-0df0-466e-8abe-8beafd2f1364" name="Changes" comment="Add Header_PO&#10;Refactor Start_Search_Steps and Search_PO">
+    <list default="true" id="8a3bb8e6-0df0-466e-8abe-8beafd2f1364" name="Changes" comment="Add Scenario Validate Successful Search - Specific Data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/drivers/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drivers/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/Base_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/Base_PO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/Header_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/Header_PO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObject/Search_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/Search_PO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Start_Search_Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Start_Search_Steps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Start_Search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Start_Search.feature" afterDir="false" />
     </list>
@@ -37,6 +38,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Cucumber Java.Scenario: Validate Successful Search - Redirect To Brand Page.executor": "Run",
     "Cucumber Java.Scenario: Validate Successful Search - Specific Data.executor": "Run",
     "Cucumber Java.Scenario: Validate Successful Search - Unique Data.executor": "Run",
     "Maven.deichmann [clean].executor": "Run",
@@ -54,7 +56,27 @@
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Validate Successful Search - Specific Data">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Validate Successful Search - Redirect To Brand Page">
+    <configuration name="Scenario: Validate Successful Search - Redirect To Brand Page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Start_Search.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="deichmann" />
+      <option name="NAME_FILTER" value="^Validate Successful Search \- Redirect To Brand Page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate Successful Search \- Redirect To Brand Page$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Validate Successful Search - Redirect To Brand Page" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: Validate Successful Search - Specific Data" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Start_Search.feature" />
@@ -114,6 +136,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Validate Successful Search - Redirect To Brand Page" />
         <item itemvalue="Cucumber Java.Scenario: Validate Successful Search - Specific Data" />
         <item itemvalue="Cucumber Java.Scenario: Validate Successful Search - Unique Data" />
         <item itemvalue="TestNG.MainRunner" />
@@ -217,7 +240,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744730782614</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add Scenario Validate Successful Search - Specific Data">
+      <option name="closed" value="true" />
+      <created>1744748183605</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1744748183605</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -231,7 +262,8 @@
     <MESSAGE value="Implement I should be presented with the search result page" />
     <MESSAGE value="Add HTML Report to MainRunner" />
     <MESSAGE value="Add Header_PO&#10;Refactor Start_Search_Steps and Search_PO" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Header_PO&#10;Refactor Start_Search_Steps and Search_PO" />
+    <MESSAGE value="Add Scenario Validate Successful Search - Specific Data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Scenario Validate Successful Search - Specific Data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

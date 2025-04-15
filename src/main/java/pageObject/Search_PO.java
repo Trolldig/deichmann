@@ -15,6 +15,8 @@ public class Search_PO extends Base_PO{
 
     private String unique_Part_Of_Search_URL = "search?";
 
+    private String unique_Part_Of_Brand_URL = "marken";
+
     public Search_PO() { super();}
 
     public void navigateTo_Homepage(){
@@ -32,6 +34,13 @@ public class Search_PO extends Base_PO{
     public void validate_Search_Page_Is_Displayed(){
         waitForURL_Containing(unique_Part_Of_Search_URL);
         Assert.assertTrue(getCurrentURL().contains(unique_Part_Of_Search_URL), "URL enthält nicht 'search?'");
+    }
+
+    public void validate_Brand_Page_Is_Displayed(String brand){
+        brand = brand.toLowerCase();
+        waitForURL_Containing(unique_Part_Of_Brand_URL);
+        Assert.assertTrue(getCurrentURL().contains(unique_Part_Of_Brand_URL) && getCurrentURL().contains(brand),
+                "URL enthält nicht " + brand);
     }
 
 }

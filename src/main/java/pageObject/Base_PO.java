@@ -1,6 +1,7 @@
 package pageObject;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -32,6 +33,11 @@ public class Base_PO {
     public void sendKeys(WebElement element, String textToType) {
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(Global_vars.DEFAULT_EXPLICIT_TIMEOUT));
         wait.until(ExpectedConditions.elementToBeClickable(element)).sendKeys(textToType);
+    }
+
+    public void sendKeys(WebElement element, Keys key) {
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(Global_vars.DEFAULT_EXPLICIT_TIMEOUT));
+        wait.until(ExpectedConditions.elementToBeClickable(element)).sendKeys(key);
     }
 
     public void waitFor(By by){

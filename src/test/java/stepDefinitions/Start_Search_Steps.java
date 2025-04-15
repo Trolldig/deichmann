@@ -48,6 +48,14 @@ public class Start_Search_Steps extends Base_PO {
     public void i_click_on_the_first_suggestion() {
         headerPO.clickFirst_Suggestion();
     }
+    @And("I submit the search")
+    public void i_submit_the_search() {
+        headerPO.submitSearch();
+    }
+    @Then("I should be presented with the brand page of {string}")
+    public void i_should_be_presented_with_the_brand_page_of(String brand) {
+        searchPO.validate_Brand_Page_Is_Displayed(brand);
+    }
     @Then("I should be presented with the search result page")
     public void i_should_be_presented_with_the_search_result_page() {
         searchPO.validate_Search_Page_Is_Displayed();
